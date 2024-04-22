@@ -134,6 +134,57 @@ Likewise, you can also select "macOS" for desktop app that looks like this:
 
 ![](img/flutter_app_macos.png)
 
+## dart
+
+### CLI
+
+#### Analyze
+
+Analyze Dart code just like `cargo check` in rust.
+
+```sh
+dart analyze
+Analyzing my_dart_app...               0.5s
+
+warning • bin/my_dart_app.dart:6:7 • The value of the local variable 'name' isn't used. Try removing the variable or using it. • unused_local_variable
+warning • bin/my_dart_app.dart:7:7 • The value of the local variable 'year' isn't used. Try removing the variable or using it. • unused_local_variable
+warning • bin/my_dart_app.dart:8:7 • The value of the local variable 'antennaDiameter' isn't used. Try removing the variable or using it. • unused_local_variable
+warning • bin/my_dart_app.dart:9:7 • The value of the local variable 'flybyObjects' isn't used. Try removing the variable or using it. • unused_local_variable
+warning • bin/my_dart_app.dart:10:7 • The value of the local variable 'image' isn't used. Try removing the variable or using it. • unused_local_variable
+
+5 issues found.
+```
+
+for code:
+
+```dart
+  var name = 'Abhi';
+  var year = 2024;
+  var antennaDiameter = 3.7;
+  var flybyObjects = ['Jupiter', 'Saturn', 'Uranus', 'Neptune'];
+  var image = {
+    'tags': ['saturn'],
+    'url': '//path/to/saturn.jpg',
+  };
+```
+
+#### doc
+
+```sh
+# doesn't create any output folder
+dart doc --dry-run
+
+# creates output folder
+dart doc
+
+# creates output folde to specified path
+dart doc --output=docs
+```
+
+### Language
+
+- `var` used like `let mut` in rust, `let` in typescript for auto type inference.
+
 ## References
 
 - [Dart for developers](https://dart.dev/)
