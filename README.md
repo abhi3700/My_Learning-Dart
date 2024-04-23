@@ -189,3 +189,8 @@ dart doc --output=docs
 
 - [Dart for developers](https://dart.dev/)
 - [Flutter for developers](https://flutter.dev/)
+- [Learn The Dart Programming Language - Complete Free Course!](https://www.youtube.com/watch?v=JZukfxvc7Mc) 🧑🏻‍💻
+- [Write dart code like Rust using rust_core lib](https://github.com/mcmah309/rust_core)
+- Integrate rust native with Flutter via FFI:
+  - [How to integrate Flutter and Rust with flutter_rust_bridge](https://youtu.be/oRahosxToxA?si=nBf3AMbF-s6uLPxN)
+  - [How to use Flutter Rust Bridge in Flutter - Step By Step Guide [Part One] | Rust | Flutter](https://www.youtube.com/watch?v=N9fK8rZVK_g)
